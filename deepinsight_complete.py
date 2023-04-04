@@ -13,7 +13,6 @@ from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.feature_extraction.text import CountVectorizer
-import meta
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import datetime
@@ -34,7 +33,8 @@ st.markdown("<i>Unleash the power of Twitter with DeepInsight - where every twee
 selected = st.text_input("Enter a keyword to analyze")
 from_date = st.date_input("Select the start date", datetime.date(2023, 4, 1))
 to_date = st.date_input("Select the end date")
-length = st.radio("Number of tweets to retrieve", (10, 50, 100, 250, 500, 1000, 2500, 5000))
+length = st.slider("Number of tweets to retrieve", 50, 5000, 50)
+#length = st.radio("Number of tweets to retrieve", (10, 50, 100, 250, 500, 1000, 2500, 5000))
 button_analyze = st.button('Extract Tweets')
 # creating a single-element container
 placeholder = st.empty()
