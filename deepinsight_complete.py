@@ -175,7 +175,6 @@ if selected and from_date and to_date and length and button_analyze:
             plot_location(dataframe)
         except:
             st.markdown('Map unavailable')
-            continue
         #st.dataframe(sentiment_analysis(dataframe)[['Text', 'sentiment']].tail())
     elif length > 4000:
         st.markdown("<p> Contact the developer directly <a href='https://linkedin.com/in/oluwadolapo-salako'>here</a> for analysis of over 4000 tweets </p>", unsafe_allow_html=True)
