@@ -1,0 +1,4 @@
+tk
+xclip
+xsel
+wl-clipboard
