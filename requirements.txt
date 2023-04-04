@@ -1,3 +1,4 @@
+snscrape
 wordcloud
 pyperclip
 clipboard 
@@ -13,4 +14,3 @@ pyldavis
 matplotlib
 transformers
 torchvision
-snscrape
