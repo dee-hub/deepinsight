@@ -8,6 +8,7 @@ import os
 import nltk
 nltk.download('vader_lexicon')
 import re
+from nltk.corpus import stopwords
 import string
 from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
