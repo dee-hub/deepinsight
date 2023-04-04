@@ -138,7 +138,7 @@ def plot_location(data):
                        "&WIDTH=1000&HEIGHT=1000&LAYERS=RADAR_1KM_RDBR&TILED=true&FORMAT=image/png"],
         }
       ])
-    fig.update_layout(margin={"r":0,"l":0)
+    fig.update_layout(margin={"r":0,"l":0})
     return st.plotly_chart(fig, use_container_width=True)
 
 def word_cloud(df):
