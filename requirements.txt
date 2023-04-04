@@ -13,3 +13,4 @@ pyldavis
 matplotlib
 transformers
 torchvision
+snscrape
