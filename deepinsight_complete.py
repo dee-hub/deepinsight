@@ -7,6 +7,7 @@ import numpy as np
 import os
 import nltk
 nltk.download('vader_lexicon')
+nltk.download('stopwords')
 import re
 from nltk.corpus import stopwords
 import string
