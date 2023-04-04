@@ -160,7 +160,7 @@ def word_cloud(df):
 
 if selected and from_date and to_date and length and button_analyze:
     dataframe = clean_text(selected, from_date, to_date, length)
-    if length <= 1000:
+    if length <= 4000:
         fig_col1, fig_col2 = st.columns(2)
         with fig_col1:
             st.markdown("Sentiment Analysis")
@@ -175,5 +175,5 @@ if selected and from_date and to_date and length and button_analyze:
             st.markdown('Map unavailable')
         
         #st.dataframe(sentiment_analysis(dataframe)[['Text', 'sentiment']].tail())
-    elif length > 1000:
-        st.markdown("<p> Contact the developer directly <a href='https://linkedin.com/in/oluwadolapo-salako'>here</a> for analysis of upto 10 million tweets </p>", unsafe_allow_html=True)
+    elif length > 4000:
+        st.markdown("<p> Contact the developer directly <a href='https://linkedin.com/in/oluwadolapo-salako'>here</a> for analysis of over 4000 tweets </p>", unsafe_allow_html=True)
