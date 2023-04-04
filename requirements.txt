@@ -12,3 +12,4 @@ pyldavis
 matplotlib
 transformers
 torchvision
+wordcloud
